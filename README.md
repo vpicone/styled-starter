@@ -1,6 +1,4 @@
-# Styled-Starter
-
-## Goal
+# Styled Starter
 
 Typesafe and typehinted theming in a next.js application
 
