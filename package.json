@@ -8,12 +8,17 @@
     "build": "next build",
     "start": "next start"
   },
-  "keywords": ["next", "typescript", "styled-components", "styled-system"],
+  "keywords": [
+    "next",
+    "typescript",
+    "styled-components",
+    "styled-system"
+  ],
   "author": "Vince Picone",
   "license": "ISC",
   "dependencies": {
     "@zeit/next-typescript": "^1.1.1",
-    "next": "^7.0.2",
+    "next": "^8.0.0-canary.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "styled-components": "^4.1.3",
