@@ -1,13 +1,15 @@
 {
-  "name": "vpp-styled",
+  "name": "styled-system-next",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Next.js super powered with typescript and styled-system",
+  "main": "next.config.js",
   "scripts": {
-    "dev": "next"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["next", "typescript", "styled-components", "styled-system"],
+  "author": "Vince Picone",
   "license": "ISC",
   "dependencies": {
     "@zeit/next-typescript": "^1.1.1",
