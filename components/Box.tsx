@@ -1,21 +1,34 @@
 import styled from "styled-components";
 import {
   color,
-  space,
-  width,
   SpaceProps,
   WidthProps,
-  ColorProps
+  ColorProps,
+  FlexWrapProps,
+  DisplayProps,
+  HeightProps
 } from "styled-system";
 
-type BoxProps = SpaceProps & WidthProps & ColorProps;
+type BoxProps = SpaceProps &
+  WidthProps &
+  ColorProps &
+  FlexWrapProps &
+  HeightProps &
+  DisplayProps;
 
-const Box = styled.div<BoxProps>`
-  ${space}
-  ${width}
+const Palette = styled.div`
+  margin: ${props => props.theme.space[3]};
+`;
+
+export const Color = styled.div<BoxProps>`
+  margin: ${props => props.theme.space[1]};
+  width: ${props => props.theme.space[10]};
+  height: 75px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   ${color}
 `;
 
-Box.displayName = "Box";
-
-export default Box;
+export default Palette;

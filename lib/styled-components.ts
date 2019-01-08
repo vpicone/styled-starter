@@ -1,7 +1,7 @@
 import styledComponents from "../node_modules/styled-components";
 import { ThemedStyledComponentsModule } from "node_modules/@types/styled-components/index";
 
-type Color = {
+export type Color = {
   0: string;
   1: string;
   2: string;
@@ -16,7 +16,8 @@ export interface ThemeInterface {
     primary: Color;
     secondary: Color;
     tertiary: Color;
-    black: Color;
+    accent?: Color;
+    grey: Color;
   };
   space: [
     "0.25rem",
@@ -63,8 +64,16 @@ const {
   createGlobalStyle,
   keyframes,
   ServerStyleSheet,
-  ThemeProvider
+  ThemeProvider,
+  withTheme
 } = styledComponents as ThemedStyledComponentsModule<ThemeInterface>;
 
-export { css, createGlobalStyle, keyframes, ThemeProvider, ServerStyleSheet };
+export {
+  css,
+  createGlobalStyle,
+  keyframes,
+  ThemeProvider,
+  ServerStyleSheet,
+  withTheme
+};
 export default styled;
