@@ -1,8 +1,6 @@
 # Styled Starter
 
-Typesafe and typehinted theming in a next.js application:
-
-https://styled-system-next-demo.now.sh
+Typesafe and typehinted theming in a next.js application: https://styled-system-next-demo.now.sh
 
 ## Usage
 
