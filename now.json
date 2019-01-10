@@ -1,5 +1,5 @@
 {
   "version": 2,
-  "alias": "styled-system-next-demo",
+  "alias": "ssn-demo",
   "builds": [{ "src": "next.config.js", "use": "@now/next" }]
 }
